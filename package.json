@@ -1,0 +1,29 @@
+{
+  "name": "@ig/cli",
+  "version": "0.0.1",
+  "description": "Command Line Interface",
+  "keywords": [
+    "ig"
+  ],
+  "homepage": "https://github.com/hieudoanm/ig#readme",
+  "bugs": {
+    "url": "https://github.com/hieudoanm/ig/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hieudoanm/ig.git"
+  },
+  "license": "GPL-3.0",
+  "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
+  "packageManager": "pnpm@10.20.0",
+  "scripts": {
+    "lint": "turbo run lint",
+    "build": "turbo run build",
+    "format": "turbo run format",
+    "prepare": "husky || true"
+  },
+  "devDependencies": {
+    "husky": "9.1.7",
+    "turbo": "2.6.0"
+  }
+}
