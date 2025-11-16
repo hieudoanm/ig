@@ -1,0 +1,56 @@
+{
+  "name": "@ig/frontend",
+  "version": "0.0.1",
+  "private": true,
+  "description": "GitHub",
+  "keywords": [
+    "ig"
+  ],
+  "homepage": "https://github.com/hieudoanm/ig#readme",
+  "bugs": {
+    "url": "https://github.com/hieudoanm/ig/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hieudoanm/ig.git"
+  },
+  "license": "GPL-3.0",
+  "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
+  "scripts": {
+    "format": "prettier --cache --write .",
+    "predev": "kill-port 3000",
+    "dev": "next dev",
+    "prebuild": "rimraf .next ../../docs",
+    "build": "next build",
+    "postbuild": "touch ../../docs/.nojekyll",
+    "prestart": "kill-port 3000",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@silvia-odwyer/photon": "0.3.3",
+    "@tanstack/react-query": "5.90.9",
+    "daisyui": "5.5.5",
+    "next": "16.0.3",
+    "qrcode": "1.5.4",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "tesseract.js": "6.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.1.17",
+    "@types/node": "24.10.1",
+    "@types/qrcode": "1.5.6",
+    "@types/react": "19.2.5",
+    "@types/react-dom": "19.2.3",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "9.39.1",
+    "eslint-config-next": "16.0.3",
+    "kill-port": "2.0.1",
+    "prettier": "3.6.2",
+    "prettier-plugin-tailwindcss": "0.7.1",
+    "rimraf": "6.1.0",
+    "tailwindcss": "4.1.17",
+    "typescript": "5.9.3"
+  }
+}
