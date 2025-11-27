@@ -11,21 +11,20 @@ const HomePage: NextPage = () => {
         <Divider />
         <div className="flex h-full grow items-center justify-center">
           <div className="flex flex-col gap-4">
-            <Link href="/filter">
-              <button className="btn btn-primary w-full" type="button">
-                Filter
-              </button>
-            </Link>
-            <Link href="/ocr">
-              <button className="btn btn-primary w-full" type="button">
-                OCR
-              </button>
-            </Link>
-            <Link href="/qrcode">
-              <button className="btn btn-primary w-full" type="button">
-                QRCode
-              </button>
-            </Link>
+            {[
+              { id: 'filter', href: '/filter', name: 'Filter' },
+              { id: 'ocr', href: '/ocr', name: 'OCR' },
+              { id: 'qrcode', href: '/qrcode', name: 'QRCode' },
+              { id: 'size', href: '/size', name: 'Size' },
+            ].map(({ id, href, name }) => {
+              return (
+                <Link key={id} href={href}>
+                  <button className="btn btn-primary w-full" type="button">
+                    {name}
+                  </button>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>

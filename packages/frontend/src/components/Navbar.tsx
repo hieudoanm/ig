@@ -10,15 +10,18 @@ export const Navbar: FC = () => {
           <Link href="/">{APP_NAME}</Link>
         </div>
         <div className="hidden space-x-4 lg:flex">
-          <Link href="/filter" className="hover:underline">
-            Filter
-          </Link>
-          <Link href="/ocr" className="hover:underline">
-            OCR
-          </Link>
-          <Link href="/qrcode" className="hover:underline">
-            QRCode
-          </Link>
+          {[
+            { id: 'filter', href: '/filter', name: 'Filter' },
+            { id: 'ocr', href: '/ocr', name: 'OCR' },
+            { id: 'qrcode', href: '/qrcode', name: 'QRCode' },
+            { id: 'size', href: '/size', name: 'Size' },
+          ].map(({ id, href, name }) => {
+            return (
+              <Link key={id} href={href} className="hover:underline">
+                {name}
+              </Link>
+            );
+          })}
         </div>
       </div>
     </nav>

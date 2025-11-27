@@ -54,8 +54,7 @@ const Home: FC = () => {
             onClick={async () => {
               const content = await png2ico(filteredBase64 || originalBase64);
               download({ content, format: 'ico', filename: 'favicon' }).image();
-            }}
-          >
+            }}>
             Export as ICO
           </button>
         )}
@@ -66,8 +65,7 @@ const Home: FC = () => {
             onClick={async () => {
               const content = await png2jpg(filteredBase64 || originalBase64);
               download({ content, format: 'jpg', filename: 'image' }).image();
-            }}
-          >
+            }}>
             Export as JPG
           </button>
         )}
@@ -78,8 +76,7 @@ const Home: FC = () => {
             onClick={async () => {
               const content = await svg2png(filteredBase64 || originalBase64);
               download({ content, format: 'png', filename: 'image' }).image();
-            }}
-          >
+            }}>
             Export as PNG
           </button>
         )}
@@ -131,8 +128,7 @@ const Home: FC = () => {
                         ...previous,
                         filteredBase64: filteredBase64,
                       }));
-                    }}
-                  >
+                    }}>
                     Filter - {mask.charAt(0).toUpperCase() + mask.slice(1)}
                   </button>
                 );

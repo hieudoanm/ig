@@ -38,30 +38,28 @@ const QRCode: FC = () => {
               id="url"
               name="url"
               placeholder="URL"
-              className="grow input w-full"
+              className="input w-full grow"
               value={url}
             />
             <button
               type="button"
-              className="w-full md:w-auto btn-primary btn"
+              className="btn-primary btn w-full md:w-auto"
               onClick={() => {
                 generate();
-              }}
-            >
+              }}>
               Generate
             </button>
             {dataURL && (
               <button
                 type="button"
-                className="w-full md:w-auto btn btn-primary"
+                className="btn btn-primary w-full md:w-auto"
                 onClick={() => {
                   download({
                     content: dataURL,
                     format: 'jpg',
                     filename: 'qrcode',
                   }).image();
-                }}
-              >
+                }}>
                 Download
               </button>
             )}

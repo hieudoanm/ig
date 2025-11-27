@@ -1,5 +1,5 @@
 {
-  "name": "@instagram/extension",
+  "name": "@ig/extension",
   "version": "0.0.1",
   "description": "Instagram - Extension",
   "main": "dist/background.js",
