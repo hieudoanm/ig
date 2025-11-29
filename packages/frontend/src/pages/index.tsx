@@ -14,7 +14,6 @@ const HomePage: NextPage = () => {
             {[
               { id: 'filter', href: '/filter', name: 'Filter' },
               { id: 'ocr', href: '/ocr', name: 'OCR' },
-              { id: 'qrcode', href: '/qrcode', name: 'QRCode' },
               { id: 'size', href: '/size', name: 'Size' },
             ].map(({ id, href, name }) => {
               return (
