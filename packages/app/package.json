@@ -33,7 +33,7 @@
     "@capacitor/ios": "8.0.0",
     "@silvia-odwyer/photon": "0.3.3",
     "@tanstack/react-query": "5.90.12",
-    "next": "16.0.8",
+    "next": "16.0.10",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "tesseract.js": "6.0.1"
