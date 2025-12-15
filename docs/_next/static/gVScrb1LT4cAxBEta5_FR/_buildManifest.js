@@ -9,7 +9,7 @@ self.__BUILD_MANIFEST = {
     "static/chunks/6b95048e2c8e1a69.js"
   ],
   "/ocr": [
-    "static/chunks/cd70acbc3f1ff3d4.js"
+    "static/chunks/db8f21e36132b08e.js"
   ],
   "/size": [
     "static/chunks/49ee1fe7f38e7ec6.js"
