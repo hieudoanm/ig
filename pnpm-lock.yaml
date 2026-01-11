@@ -127,8 +127,8 @@ importers:
         specifier: 7.5.1
         version: 7.5.1
       '@types/chrome':
-        specifier: 0.1.32
-        version: 0.1.32
+        specifier: 0.1.33
+        version: 0.1.33
       '@types/firefox-webext-browser':
         specifier: 143.0.0
         version: 143.0.0
@@ -1371,8 +1371,8 @@ packages:
   '@types/body-parser@1.19.6':
     resolution: {integrity: sha512-HLFeCYgz89uk22N5Qg3dvGvsv46B8GLvKKo1zKG4NybA8U2DiEO3w9lqGg29t/tfLRJpJ6iQxnVw4OnB7MoM9g==}
 
-  '@types/chrome@0.1.32':
-    resolution: {integrity: sha512-n5Cqlh7zyAqRLQWLXkeV5K/1BgDZdVcO/dJSTa8x+7w+sx7m73UrDmduAptg4KorMtyTW2TNnPu8RGeaDMKNGg==}
+  '@types/chrome@0.1.33':
+    resolution: {integrity: sha512-hSwcseKjWilz8bq93kLyIfSTvFLypRbO5iRhSXdJyVFFMV9aeqIjisBI6P/0J5+FiIKMo2NejyhHXfQLN0c0tQ==}
 
   '@types/connect@3.4.38':
     resolution: {integrity: sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug==}
@@ -7801,7 +7801,7 @@ snapshots:
       '@types/connect': 3.4.38
       '@types/node': 25.0.6
 
-  '@types/chrome@0.1.32':
+  '@types/chrome@0.1.33':
     dependencies:
       '@types/filesystem': 0.0.36
       '@types/har-format': 1.2.16
